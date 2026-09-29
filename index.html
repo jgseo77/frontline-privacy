@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--
+  FRONTLINE 개인정보 처리방침 — 게시 위치: https://hyperspeedgames.com/frontline-privacy/
+  (jgseo77.github.io 가 hyperspeedgames.com 사용자 사이트라 프로젝트 저장소 Pages 가 그 아래 경로로 붙는다)
+
+  ⚠ 기능을 추가하면 이 문서도 같이 낡는다 — 특히:
+    - AdMob(보상형 · 전면) · 인앱 구매(광고 제거) · EEA 동의(UMP) · ATT 를 네이티브에 붙이는 날
+      "3. 광고 및 인앱 구매" 를 TERRA 처리방침 2·4·5항처럼 바꿀 것. 지금 문장("제공하지 않습니다")은 그날 거짓이 된다.
+    - 서버에 저장하는 항목이 늘면 1항 표 + delete-account.html "지워지는 것" 표.
+    - 런타임 의존성이 늘면 8항 라이선스 목록(package.json dependencies 기준).
+-->
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FRONTLINE 개인정보 처리방침 · Privacy Policy</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #0b0e13;
+    color: #d8dce6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; color: #fff; letter-spacing: -0.01em; }
+  .sub { color: #8b93a3; font-size: 0.9rem; margin-bottom: 8px; }
+  .meta { color: #6f7788; font-size: 0.82rem; margin-bottom: 28px; }
+  h2 { font-size: 1.12rem; margin: 34px 0 10px; color: #f0b84a; }
+  h3 { font-size: 0.98rem; margin: 18px 0 6px; color: #cfd4e0; }
+  p, li, td, th { font-size: 0.94rem; color: #c5cad6; }
+  a { color: #8db4ff; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  hr { border: none; border-top: 1px solid #232a38; margin: 46px 0; }
+  .lang-toggle { text-align: right; margin-bottom: 10px; }
+  .lang-toggle a { font-size: 0.85rem; color: #8b93a3; text-decoration: none; }
+  .box { background: #121822; border: 1px solid #232a38; border-radius: 10px; padding: 14px 16px; margin: 14px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  th, td { border: 1px solid #232a38; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #121822; color: #e3e7ef; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ================= 한국어 ================= -->
+<section id="ko">
+  <div class="lang-toggle"><a href="#en">English ▾</a></div>
+  <h1>FRONTLINE 개인정보 처리방침</h1>
+  <div class="sub">FRONTLINE — 블록 퍼즐로 전선을 미는 전략 게임</div>
+  <div class="meta">시행일: 2026년 9월 30일 · 최종 수정일: 2026년 9월 30일 · 개발자: HYPERSPEED</div>
+  <p>본 방침은 HYPERSPEED(이하 "개발자")가 제공하는 모바일 게임 <b>FRONTLINE</b>(이하 "본 앱")의 개인정보 처리에 관한 사항을 설명합니다. 캠페인과 연습은 <b>로그인 없이</b> 이용할 수 있고, 그 기록은 이용자 기기에만 저장됩니다. 다른 이용자와 겨루는 <b>대전</b>을 이용하려고 로그인한 경우에만 서버에 계정이 만들어집니다(1항).</p>
+
+  <h2>1. 개발자가 처리하는 정보</h2>
+  <h3>로그인 없이 이용할 때</h3>
+  <p>캠페인 진행도·획득한 별·꾸미기·소리 설정·연습 기록은 <b>이용자 기기 안에만</b> 저장되며 개발자에게 전송되지 않습니다.</p>
+
+  <h3>대전 (선택 · Apple로 로그인)</h3>
+  <div class="box">대전을 이용하려고 <b>Apple로 로그인</b>하면 개발자가 운영하는 서버(<b>Supabase</b>)에 계정이 만들어지고 다음 정보가 저장됩니다.
+  <table>
+    <tr><th>항목</th><th>내용</th><th>다른 이용자에게 보이는가</th></tr>
+    <tr><td>계정 식별자</td><td>로그인 연결에 쓰는 무작위 ID</td><td>아니요</td></tr>
+    <tr><td>이메일 주소</td><td>Apple이 전달하는 주소. 로그인할 때 「이메일 가리기」를 선택하면 Apple의 중계 주소가 전달됩니다</td><td>아니요</td></tr>
+    <tr><td>표시 이름</td><td>이용자가 정하거나 Apple이 전달한 이름</td><td>예 — 대전 상대 카드</td></tr>
+    <tr><td>대전 기록</td><td>판 기록(블록 조작과 병종 선택의 순서), 승패 전적, 주력 병종 분포, 실력 지표, 마지막 대전 시각</td><td>예 — 판 기록은 다른 이용자의 대전 상대로 재생되고, 전적·주력 병종이 상대 카드에 표시됩니다</td></tr>
+  </table>
+  <ul><li>목적 — 비슷한 실력의 대전 상대를 찾아 주기 위해서입니다.</li>
+  <li>개발자는 운영·오류 대응 목적 외에는 이 정보를 열람하거나 이용하지 않으며, 제3자에게 판매하거나 제공하지 않습니다.</li>
+  <li>Apple 계정의 비밀번호나 결제 정보는 개발자에게 전달되지 않습니다.</li></ul></div>
+
+  <h2>2. 분석 도구 (Google Analytics for Firebase)</h2>
+  <p>서비스 개선을 위해 다음 정보를 수집·처리할 수 있습니다: 앱 사용 이벤트(스테이지 시작·결과, 대전 결과, 꾸미기 장착 등) · 앱 인스턴스 식별자 · 기기 및 운영체제 정보 · IP 주소 기반의 대략적 위치(국가 수준) · 앱 오류 정보. 이 정보는 통계 분석과 난이도·기능 개선에만 사용되며, 1항의 대전 계정과 연결하지 않고, 다른 회사의 앱·웹사이트에 걸친 추적에 사용하지 않습니다. · <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호</a></p>
+
+  <h2>3. 광고 및 인앱 구매</h2>
+  <p>현재 본 앱은 광고를 표시하지 않고 인앱 구매를 제공하지 않습니다. 도입하는 경우 이 방침을 먼저 개정해 알립니다.</p>
+
+  <h2>4. 처리 위탁 및 국외 이전</h2>
+  <p>개발자는 서비스 제공을 위해 다음 업체에 처리를 위탁하며, 이 과정에서 정보가 국외로 전송·보관될 수 있습니다. 전송은 앱을 이용하는 시점에 네트워크를 통해 이루어집니다.</p>
+  <table>
+    <tr><th>수탁 업체 (국가)</th><th>위탁 업무 · 항목</th><th>보유 기간</th></tr>
+    <tr><td>Supabase, Inc. (미국)</td><td>대전 계정·기록의 저장(1항 표의 항목)</td><td>계정 삭제 시까지</td></tr>
+    <tr><td>Google LLC (미국)</td><td>이용 통계 분석(2항의 항목)</td><td>Google Analytics 데이터 보관 기간 설정에 따름</td></tr>
+  </table>
+  <p>국외 이전을 원하지 않으시면 대전 로그인을 하지 않으시면 됩니다(캠페인·연습은 그대로 이용할 수 있습니다).</p>
+
+  <h2>5. 보관 및 삭제</h2>
+  <ul><li><b>앱에서 즉시 삭제</b> — 홈 화면 이름 아래의 <b>「계정 삭제」</b>로 서버의 계정과 대전 기록을 바로 지울 수 있습니다.</li>
+  <li><b>앱 없이 삭제 요청</b> — 앱을 이미 지웠다면 <a href="delete-account.html">계정 및 데이터 삭제 안내</a>에 따라 이메일로 요청해 주세요. 받은 날로부터 30일 안에 삭제하고 회신합니다.</li>
+  <li><b>기기 데이터</b> — 앱을 삭제하면 기기에서 함께 삭제됩니다. 다만 Android는 운영체제의 자동 백업이 켜져 있으면 이용자 본인의 Google 계정에 백업되어 재설치 시 복원될 수 있습니다(기기의 설정 &gt; Google &gt; 백업). 개발자는 이 백업에 접근할 수 없습니다.</li>
+  <li><b>서버 백업</b> — 서비스 제공자(Supabase)의 백업에 남은 사본은 백업 보관 기간이 지나면 자동으로 사라집니다.</li></ul>
+
+  <h2>6. 이용자의 권리</h2>
+  <p>이용자는 언제든 자신의 정보에 대한 열람·정정·삭제·처리 정지를 요청할 수 있습니다. 표시 이름은 앱에서 직접 바꿀 수 있고, 그 밖의 요청은 아래 문의처로 보내 주세요. 유럽 경제 지역(EEA)·영국 등 관련 법률이 적용되는 지역의 이용자는 그 법률이 정한 권리를 같은 방법으로 행사할 수 있습니다.</p>
+
+  <h2>7. 아동의 개인정보</h2>
+  <p>본 앱은 아동을 주 대상으로 하지 않으며, 개발자는 만 14세 미만 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+  <h2>8. 오픈소스 라이선스</h2>
+  <p>본 앱은 다음 오픈소스 소프트웨어를 사용합니다. 각 라이선스 전문은 해당 프로젝트에서 확인할 수 있습니다.</p>
+  <ul><li>PixiJS — MIT · PixiJS Team</li><li>Capacitor (core·android·ios·app·status-bar) — MIT · Ionic</li><li>supabase-js — MIT · Supabase</li><li>@capacitor-firebase/analytics — Apache-2.0 · Robin Genz</li><li>Firebase Apple / Android SDK — Apache-2.0 · Google LLC</li></ul>
+
+  <h2>9. 방침의 변경</h2>
+  <p>본 방침은 법령이나 서비스 변경에 따라 개정될 수 있으며, 개정 시 본 페이지로 공지합니다.</p>
+  <h2>10. 문의</h2>
+  <p>개인정보 보호 담당: HYPERSPEED · 이메일: <a href="mailto:contact@hyperspeedgames.com">contact@hyperspeedgames.com</a></p>
+</section>
+
+<hr />
+
+<!-- ================= English ================= -->
+<section id="en" lang="en">
+  <div class="lang-toggle"><a href="#ko">한국어 ▾</a></div>
+  <h1>FRONTLINE Privacy Policy</h1>
+  <div class="sub">FRONTLINE — a block-puzzle strategy game where you push the front line</div>
+  <div class="meta">Effective: September 30, 2026 · Last updated: September 30, 2026 · Developer: HYPERSPEED</div>
+  <p>This policy explains how <b>FRONTLINE</b> ("the App"), provided by HYPERSPEED ("the Developer"), handles data. The campaign and practice modes work <b>without signing in</b>, and their records stay on your device. A server account is created only if you sign in to play <b>Versus</b> against other players (section 1).</p>
+
+  <h2>1. Information the Developer Processes</h2>
+  <h3>Without signing in</h3>
+  <p>Campaign progress, stars, cosmetics, sound settings and practice records are stored <b>only on your device</b> and are not sent to the Developer.</p>
+
+  <h3>Versus (optional · Sign in with Apple)</h3>
+  <div class="box">If you <b>Sign in with Apple</b> to play Versus, an account is created on the Developer's server (<b>Supabase</b>) with the following:
+  <table>
+    <tr><th>Item</th><th>Details</th><th>Visible to other players?</th></tr>
+    <tr><td>Account identifier</td><td>A random ID used for sign-in</td><td>No</td></tr>
+    <tr><td>Email address</td><td>The address Apple provides. If you choose "Hide My Email", Apple provides a relay address instead</td><td>No</td></tr>
+    <tr><td>Display name</td><td>A name you choose or that Apple provides</td><td>Yes — on the opponent card</td></tr>
+    <tr><td>Match records</td><td>Match replays (the sequence of your block moves and troop choices), win/loss record, main troop distribution, skill rating, time of last match</td><td>Yes — replays are played back as opponents for other players, and your record and main troops appear on the opponent card</td></tr>
+  </table>
+  <ul><li>Purpose — to find opponents of similar skill.</li>
+  <li>The Developer does not view or use this data except for operations and troubleshooting, and never sells or shares it with third parties.</li>
+  <li>Your Apple ID password and payment details are never shared with the Developer.</li></ul></div>
+
+  <h2>2. Analytics (Google Analytics for Firebase)</h2>
+  <p>To improve the App we may process: usage events (stage start and result, Versus results, cosmetics equipped, etc.), an app-instance identifier, device and OS info, approximate location from your IP address (country), and app errors. This is used only for statistics and for tuning difficulty and features. It is not linked to your Versus account and never used for tracking across other companies' apps or websites · <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></p>
+
+  <h2>3. Ads and In-App Purchases</h2>
+  <p>The App currently shows no ads and offers no in-app purchases. If that changes, this policy will be updated first.</p>
+
+  <h2>4. Service Providers and International Transfers</h2>
+  <p>The Developer uses the following providers, and your data may be transferred to and stored outside your country. Transfers happen over the network while you use the App.</p>
+  <table>
+    <tr><th>Provider (country)</th><th>Purpose · data</th><th>Retention</th></tr>
+    <tr><td>Supabase, Inc. (USA)</td><td>Storing Versus accounts and records (items in section 1)</td><td>Until the account is deleted</td></tr>
+    <tr><td>Google LLC (USA)</td><td>Usage analytics (items in section 2)</td><td>Per the Google Analytics data-retention setting</td></tr>
+  </table>
+  <p>If you do not want your data transferred, simply don't sign in to Versus — the campaign and practice remain fully available.</p>
+
+  <h2>5. Retention and Deletion</h2>
+  <ul><li><b>Delete in the App (immediate)</b> — tap <b>"계정 삭제" (Delete account)</b> under your name on the Home screen to remove your server account and match records at once.</li>
+  <li><b>Request without the App</b> — if you have already uninstalled the App, follow the <a href="delete-account.html">account and data deletion guide</a> to request by email. We will delete and reply within 30 days of receiving the request.</li>
+  <li><b>On-device data</b> — deleted when you uninstall the App. On Android, if Auto Backup is enabled, it may be backed up to your own Google account and restored on reinstall (Settings &gt; Google &gt; Backup). The Developer cannot access these backups.</li>
+  <li><b>Server backups</b> — copies in our provider's (Supabase) backups expire automatically after the backup retention period.</li></ul>
+
+  <h2>6. Your Rights</h2>
+  <p>You may request access to, correction, deletion, or restriction of processing of your data at any time. You can change your display name in the App; send any other request to the contact below. Users in the EEA, the UK and other regions with applicable laws may exercise the rights those laws provide in the same way.</p>
+
+  <h2>7. Children</h2>
+  <p>The App is not directed at children, and the Developer does not knowingly collect personal information from children.</p>
+
+  <h2>8. Open-Source Licenses</h2>
+  <p>The App uses the following open-source software; full license texts are available from each project.</p>
+  <ul><li>PixiJS — MIT · PixiJS Team</li><li>Capacitor (core·android·ios·app·status-bar) — MIT · Ionic</li><li>supabase-js — MIT · Supabase</li><li>@capacitor-firebase/analytics — Apache-2.0 · Robin Genz</li><li>Firebase Apple / Android SDK — Apache-2.0 · Google LLC</li></ul>
+
+  <h2>9. Changes</h2>
+  <p>This policy may be updated for legal or service changes; updates will be posted on this page.</p>
+  <h2>10. Contact</h2>
+  <p>Privacy contact: HYPERSPEED · Email: <a href="mailto:contact@hyperspeedgames.com">contact@hyperspeedgames.com</a></p>
+</section>
+
+</div>
+</body>
+</html>

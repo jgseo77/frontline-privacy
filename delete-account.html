@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRONTLINE — 계정 및 데이터 삭제 / Account &amp; Data Deletion</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; line-height: 1.65; color: #1c2430; }
+  h1 { font-size: 24px; margin-bottom: 4px; }
+  .dev { color: #5b6878; margin-top: 0; }
+  h2 { font-size: 18px; margin-top: 32px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { border: 1px solid #d6dce4; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f2f5f9; }
+  hr { margin: 40px 0; border: 0; border-top: 1px solid #d6dce4; }
+</style>
+</head>
+<body>
+
+<h1>FRONTLINE — 계정 및 데이터 삭제</h1>
+<p class="dev">개발자: HYPERSPEED (하이퍼스피드)</p>
+
+<h2>앱에서 삭제하기 (즉시)</h2>
+<ol>
+  <li>FRONTLINE 을 열고 홈 화면으로 갑니다.</li>
+  <li>이름 아래의 <b>「계정 삭제」</b>를 누릅니다.</li>
+  <li>안내를 확인하고 <b>「영구 삭제」</b>를 누른 뒤, 로그인 확인 창에서 한 번 더 확인합니다.</li>
+</ol>
+<p>서버의 계정과 기록이 그 자리에서 삭제됩니다. 로그인하지 않았다면 서버에 저장된 계정이 없습니다.</p>
+
+<h2>앱 없이 삭제 요청하기</h2>
+<p>앱을 이미 지웠다면 <a href="mailto:contact@hyperspeedgames.com?subject=FRONTLINE%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">contact@hyperspeedgames.com</a> 으로
+제목 「FRONTLINE 계정 삭제 요청」, 본문에 <b>게임 안 표시 이름</b>을 적어 보내 주세요.</p>
+<p><b>본인 확인</b> — 로그인에 사용한 <b>Apple ID 이메일에서 보내 주시면</b> 그 주소로 확인하고 처리합니다.
+로그인할 때 「이메일 가리기」를 선택했다면 그 주소로는 보내기 어려우니, 어느 주소에서든 보내시되
+<b>표시 이름</b>과 <b>마지막으로 대전한 대략의 날짜</b>를 적어 주세요. 계정 기록과 대조해 확인합니다.</p>
+<p>요청을 받은 날로부터 <b>30일 안에</b> 삭제하고 회신합니다.</p>
+
+<h2>지워지는 것</h2>
+<table>
+  <tr><th>데이터</th><th>처리</th></tr>
+  <tr><td>계정 식별자(로그인 연결 정보)</td><td>삭제</td></tr>
+  <tr><td>표시 이름</td><td>삭제</td></tr>
+  <tr><td>대전 기록(판 기록·전적·주력 병종 통계·실력 지표)</td><td>삭제 — 다른 사용자의 대전 상대로도 더 이상 나오지 않습니다</td></tr>
+  <tr><td>Apple 로그인 연결</td><td>해제(앱에서 삭제한 경우)</td></tr>
+</table>
+
+<h2>남는 것</h2>
+<ul>
+  <li><b>기기 안 데이터</b>: 연습 기록 등 휴대폰에만 저장된 정보는 앱을 삭제하면 함께 지워집니다.
+      (Android 는 기기 백업 설정에 따라 재설치 시 복원될 수 있습니다.)</li>
+  <li><b>서버 백업</b>: 서비스 제공자(Supabase)의 백업에 남은 사본은 백업 보관 기간이 지나면 자동으로 사라집니다.</li>
+</ul>
+
+<hr>
+
+<h1>FRONTLINE — Account &amp; Data Deletion</h1>
+<p class="dev">Developer: HYPERSPEED</p>
+
+<h2>Delete in the app (immediate)</h2>
+<p>Open FRONTLINE → Home → tap <b>“계정 삭제” (Delete account)</b> under your name → confirm <b>“영구 삭제” (Delete permanently)</b>
+and confirm once more in the sign-in sheet. Your account and records are removed from our server immediately.</p>
+
+<h2>Request deletion without the app</h2>
+<p>Email <a href="mailto:contact@hyperspeedgames.com">contact@hyperspeedgames.com</a> with the subject “FRONTLINE account deletion”
+and your in-game display name. <b>Verification:</b> if you send it from the Apple ID email you used to sign in, we verify by that address.
+If you chose “Hide My Email” when signing in, send from any address and include your display name and the approximate date you last played
+a ranked match — we will match it against the account record.
+We will delete your account and reply <b>within 30 days</b> of receiving the request.</p>
+
+<h2>What is deleted</h2>
+<p>Account identifier, display name, match records (replays, win/loss, stats, skill rating), and the Sign in with Apple link.</p>
+
+<h2>What is kept</h2>
+<p>Data stored only on your device is removed when you uninstall the app (Android may restore it from device backup).
+Copies in our provider’s (Supabase) backups expire automatically after the backup retention period.</p>
+
+</body>
+</html>

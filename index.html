@@ -79,10 +79,12 @@
     <tr><td>표시 이름</td><td>이용자가 정하거나 Apple·Google이 전달한 이름</td><td>예 — 대전 상대 카드</td></tr>
     <tr><td>대전 기록</td><td>판 기록(병종 출격과 일격의 순서와 시각), 승패 전적, 주력 병종 분포, 실력 지표, 마지막 대전 시각, 기록을 올린 기기 종류(iOS·Android). 로그인한 뒤 플레이한 캠페인 판 중 규칙이 대전과 같은 판(광고 부스트를 쓴 판 제외)의 판 기록도 포함됩니다(대전 상대로 쓰이고 실력 지표에 반영되며, 승패 전적에는 들어가지 않습니다)</td><td>예 — 판 기록은 다른 이용자의 대전 상대로 재생되고, 전적·주력 병종·기기 종류가 상대 카드에 표시됩니다</td></tr>
     <tr><td>대전 결과</td><td>다른 이용자의 기록과 겨룬 판마다: 나와 상대의 계정 식별자, 상대 기록의 식별자, 승패, 최종 전선, 시각</td><td>나와 그 상대에게만 — 「이 상대와 2승 1패」 같은 상대 전적과 「내 기록에 N명이 도전」 같은 집계로 표시됩니다(상대의 이름 외의 계정 정보는 표시되지 않습니다)</td></tr>
+    <tr><td>신고</td><td>이용자가 대전 상대를 신고하면: 신고한 이용자와 신고된 이용자의 계정 식별자, 신고한 기록의 식별자, 사유(부적절한 이름·부정행위), 시각</td><td>아니요 — 신고된 이용자도 누가 신고했는지 알 수 없습니다</td></tr>
   </table>
   <ul><li>목적 — 비슷한 실력의 대전 상대를 찾아 주기 위해서입니다.</li>
   <li>개발자는 운영·오류 대응 목적 외에는 이 정보를 열람하거나 이용하지 않으며, 제3자에게 판매하거나 제공하지 않습니다.</li>
-  <li>Apple·Google 계정의 비밀번호나 결제 정보는 개발자에게 전달되지 않습니다.</li></ul></div>
+  <li>Apple·Google 계정의 비밀번호나 결제 정보는 개발자에게 전달되지 않습니다.</li>
+  <li><b>신고·차단</b> — 대전 상대 카드의 [신고 · 차단]으로 상대를 차단하면 그 상대의 기록과 다시 대전하지 않습니다(차단 목록은 이용자 기기에만 저장됩니다). 신고는 개발자가 확인해 부적절한 이름을 바꾸거나 기록을 삭제하는 데 쓰며, 여러 이용자에게 신고된 이용자의 기록은 확인 전까지 대전 상대로 나오지 않습니다. 부적절한 표시 이름은 앱이 자동으로 걸러 표시하지 않습니다.</li></ul></div>
 
   <h2>2. 분석 도구 (Google Analytics for Firebase)</h2>
   <p>서비스 개선을 위해 다음 정보를 수집·처리할 수 있습니다: 앱 사용 이벤트(스테이지 시작·결과, 대전 결과, 꾸미기 장착 등) · 앱 인스턴스 식별자 · 기기 및 운영체제 정보 · IP 주소 기반의 대략적 위치(국가 수준) · 앱 오류 정보. 이 정보는 통계 분석과 난이도·기능 개선에만 사용되며, 1항의 대전 계정과 연결하지 않고, 다른 회사의 앱·웹사이트에 걸친 추적에 사용하지 않습니다. · <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호</a></p>
@@ -164,10 +166,12 @@
     <tr><td>Display name</td><td>A name you choose or that Apple or Google provides</td><td>Yes — on the opponent card</td></tr>
     <tr><td>Match records</td><td>Match replays (the order and timing of your troop deployments and Strikes), win/loss record, main troop distribution, skill rating, time of last match, and the device type that uploaded the replay (iOS/Android). Also includes replays of campaign matches played after signing in whose rules match Versus, excluding matches played with an ad boost (used as Versus opponents and counted toward your skill rating, but not your win/loss record)</td><td>Yes — replays are played back as opponents for other players, and your record, main troops and device type appear on the opponent card</td></tr>
     <tr><td>Match results</td><td>For each match against another player's replay: your and your opponent's account identifiers, the opponent replay's identifier, win/loss, final front line, time</td><td>Only to you and that opponent — shown as a head-to-head record (e.g. "2W 1L vs this player") and totals such as "N players challenged your record" (no account details other than the display name are shown)</td></tr>
+    <tr><td>Reports</td><td>When you report a Versus opponent: the reporter's and the reported player's account identifiers, the reported replay's identifier, the reason (offensive name or cheating), time</td><td>No — reported players cannot see who reported them</td></tr>
   </table>
   <ul><li>Purpose — to find opponents of similar skill.</li>
   <li>The Developer does not view or use this data except for operations and troubleshooting, and never sells or shares it with third parties.</li>
-  <li>Your Apple or Google account password and payment details are never shared with the Developer.</li></ul></div>
+  <li>Your Apple or Google account password and payment details are never shared with the Developer.</li>
+  <li><b>Report · Block</b> — If you block an opponent with [Report · Block] on the Versus opponent card, you won't face their replays again (the block list is stored only on your device). Reports are reviewed by the Developer to rename offensive names or delete replays, and replays of players reported by several people are not offered as Versus opponents until reviewed. Offensive display names are filtered automatically by the App and not shown.</li></ul></div>
 
   <h2>2. Analytics (Google Analytics for Firebase)</h2>
   <p>To improve the App we may process: usage events (stage start and result, Versus results, cosmetics equipped, etc.), an app-instance identifier, device and OS info, approximate location from your IP address (country), and app errors. This is used only for statistics and for tuning difficulty and features. It is not linked to your Versus account and never used for tracking across other companies' apps or websites · <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></p>
